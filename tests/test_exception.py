@@ -1,12 +1,20 @@
 import sys
+import pytest
 
 from src.exception.exception import CustomException
 
 
-try:
+def test_custom_exception():
 
-    a = 10 / 0
+    try:
 
-except Exception as e:
+        value = 10 / 0
 
-    raise CustomException(e, sys)
+    except Exception as e:
+
+        custom_exception = CustomException(
+            e,
+            sys
+        )
+
+        assert "division by zero" in str(custom_exception)
