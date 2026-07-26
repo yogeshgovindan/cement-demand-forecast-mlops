@@ -1,0 +1,31 @@
+columns:
+
+  target_column: demand
+
+
+  numerical_columns:
+
+    - Production
+    - Sales
+    - population
+    - gdp
+    - disbusment
+    - interestrate
+
+
+  categorical_columns:
+
+    - Month
+
+
+
+required_columns:
+
+  - Month
+  - Production
+  - Sales
+  - demand
+  - population
+  - gdp
+  - disbusment
+  - interestrate
